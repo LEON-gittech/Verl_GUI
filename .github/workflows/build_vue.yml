@@ -1,0 +1,26 @@
+name: Build Vue
+
+on:
+  push:
+    branches: [ page ]
+  pull_request:
+    branches: [ page ]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build-Vue
+      uses: xRealNeon/VuePagesAction@1.0.1
+      with:
+        username: 'computer-use-agents'
+        reponame: 'dart-gui'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
