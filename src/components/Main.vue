@@ -7,7 +7,7 @@
     <div class="section header">
       <div class="title">
         <img class="mat-icon" src="/icon.png" alt="BEPA icon">
-        BEPA
+        <span class="title-text">BEPA</span>
       </div>
       <div class="subtitle">
         From Off-Policy to On-Policy: Enhancing GUI Agents via Bi-level
@@ -51,6 +51,17 @@
           <span>Data</span>
         </a>
       </span>
+
+      <div class="highlight-banner">
+        <div class="highlight-item">
+          <span class="highlight-icon">🏆</span>
+          <span><b>#1 Open-Source End-to-End Model on OSWorld (15 steps)</b>: Achieves <b>32.13%</b> success rate</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-icon">📊</span>
+          <span><b>Extreme Data Efficiency</b>: Matches GUI-OWL-7B using only <b>128 training tasks</b></span>
+        </div>
+      </div>
     </div>
 
     <div class="abstract-section">
@@ -258,8 +269,8 @@
             v-for="i in 5"
             :key="i"
             :src="'./stats/case_study/emergence/uitars_' + i + '.png'"
-            :preview-src-list="emergenceUitarsImages"
-            :initial-index="i - 1"
+            :preview-src-list="['./stats/case_study/emergence/uitars_' + i + '.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -269,6 +280,7 @@
           <el-image
             src="./stats/case_study/emergence/s2_1.png"
             :preview-src-list="['./stats/case_study/emergence/s2_1.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -278,6 +290,7 @@
           <el-image
             src="./stats/case_study/emergence/bepa_1.png"
             :preview-src-list="['./stats/case_study/emergence/bepa_1.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -293,8 +306,8 @@
             v-for="i in 2"
             :key="i"
             :src="'./stats/case_study/distribution/s2_' + i + '.png'"
-            :preview-src-list="distributionS2Images"
-            :initial-index="i - 1"
+            :preview-src-list="['./stats/case_study/distribution/s2_' + i + '.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -305,8 +318,8 @@
             v-for="i in 2"
             :key="i"
             :src="'./stats/case_study/distribution/converted_' + i + '.png'"
-            :preview-src-list="distributionConvertedImages"
-            :initial-index="i - 1"
+            :preview-src-list="['./stats/case_study/distribution/converted_' + i + '.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -317,8 +330,8 @@
             v-for="i in 3"
             :key="i"
             :src="'./stats/case_study/distribution/bepa_' + i + '.png'"
-            :preview-src-list="distributionBepaImages"
-            :initial-index="i - 1"
+            :preview-src-list="['./stats/case_study/distribution/bepa_' + i + '.png']"
+            :preview-teleported="true"
             fit="contain"
             class="dialog-img"
           />
@@ -498,16 +511,19 @@ const copyBibtex = async () => {
 .title {
   font-size: 4.5em;
   font-weight: 900;
-  background: linear-gradient(90deg, #ff3d3d 0%, #ff6b6b 25%, #3b82f6 75%, #1d4ed8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   letter-spacing: -2px;
   margin-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 18px;
+}
+
+.title-text {
+  background: linear-gradient(90deg, #ff3d3d 0%, #ff6b6b 30%, #3b82f6 70%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .subtitle {
@@ -784,6 +800,34 @@ const copyBibtex = async () => {
   color: #fff;
 }
 
+/* Highlight Banner */
+.highlight-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 24px auto 0 auto;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-radius: 12px;
+  border: 1px solid #f59e0b;
+  max-width: 800px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  color: #78350f;
+  text-align: center;
+}
+
+.highlight-icon {
+  font-size: 1.5rem;
+}
+
 /* Method Cards */
 .method-cards {
   display: grid;
@@ -1056,11 +1100,11 @@ const copyBibtex = async () => {
   max-width: 280px;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
-  transition: transform 0.2s;
+  cursor: zoom-in;
 }
 
 .dialog-img:hover {
-  transform: scale(1.02);
+  opacity: 0.9;
 }
 
 /* Features */
