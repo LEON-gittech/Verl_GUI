@@ -17,6 +17,11 @@
 </p>
 
 <p align="center">
+  🏆 <b>#1 Open-Source End-to-End Model on OSWorld (15 steps)</b>: Achieves <b>32.13%</b> success rate, surpassing all open-source end-to-end models.<br>
+  📊 <b>Extreme Data Efficiency</b>: Matches GUI-OWL-7B performance using only <b>128 training tasks</b>.
+</p>
+
+<p align="center">
   <img src="https://leon-gittech.github.io/Verl_GUI/stats/overview.png" alt="BEPA Overview" width="90%">
 </p>
 
