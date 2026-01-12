@@ -95,11 +95,14 @@ As part of this work, we release **Verl-GUI**, a highly scalable distributed tra
 ## 📝 Citation
 
 ```bibtex
-@article{wang2026bepa,
-  title = {From Off-Policy to On-Policy: Enhancing GUI Agents via Bi-level Expert-to-Policy Assimilation},
-  author = {Wang, Zezhou and Zhang, Ziyun and Zhang, Xiaoyi and Qian, Zhuzhong and Lu, Yan},
-  journal = {arXiv preprint},
-  year = {2026}
+@misc{wang2026offpolicyonpolicyenhancinggui,
+      title={From Off-Policy to On-Policy: Enhancing GUI Agents via Bi-level Expert-to-Policy Assimilation}, 
+      author={Zezhou Wang and Ziyun Zhang and Xiaoyi Zhang and Zhuzhong Qian and Yan Lu},
+      year={2026},
+      eprint={2601.05787},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.05787}, 
 }
 ```
 
