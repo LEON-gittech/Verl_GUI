@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-&nbsp;&nbsp;🌐 <a href="https://leon-gittech.github.io/Verl_GUI/">Website</a>&nbsp;&nbsp; | &nbsp;&nbsp;📑 <a href="">arXiv (coming soon)</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤖 <a href="https://huggingface.co/LEONW24/BEPA-7B-S2">Model</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤗 <a href="">Dataset (coming soon)</a>&nbsp;&nbsp;
+&nbsp;&nbsp;🌐 <a href="https://leon-gittech.github.io/Verl_GUI/">Website</a>&nbsp;&nbsp; | &nbsp;&nbsp;📑 <a href="https://arxiv.org/abs/2601.05787">arXiv</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤖 <a href="https://huggingface.co/LEONW24/BEPA-7B-S2">Model</a>&nbsp;&nbsp; | &nbsp;&nbsp;🤗 <a href="">Dataset (coming soon)</a>&nbsp;&nbsp;
 </p>
 
 <p align="center">
@@ -26,6 +26,7 @@
 </p>
 
 ## 📢 Updates
+- 2026-06: We release [Skill2Poster](https://github.com/LEON-gittech/Skill2Poster), a Codex skill pack used to turn this paper into an accurate A0 HTML/PDF academic poster workflow. The example poster and BibTeX are available at the [Skill2Poster project page](https://leon-gittech.github.io/Skill2Poster/).
 - 2026-01: We release the webpage and model [BEPA-7B-S2](https://huggingface.co/LEONW24/BEPA-7B-S2). Check it out!
 
 ## 📖 TL;DR
